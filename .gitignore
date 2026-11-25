@@ -1,0 +1,48 @@
+# --- PlatformIO (build, libs baixadas, cache) ---
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# --- Arduino IDE (build local) ---
+build/
+*.bin
+*.elf
+*.map
+*.hex
+
+# --- VS Code ---
+# Gerados automaticamente pelo PlatformIO, com caminhos absolutos da maquina.
+.vscode/*
+!.vscode/extensions.json
+!remote_control.code-workspace
+.vscode/.browse.c_cpp.db*
+.vscode/ipch
+
+# --- Segredos (Wi-Fi, tokens do Home Assistant, etc.) ---
+# Se o firmware passar a usar Wi-Fi/MQTT, coloque as credenciais em
+# secrets.h ou secrets.yaml (versione so o .example).
+secrets.h
+secrets.yaml
+!secrets.example.h
+!secrets.example.yaml
+.env
+.env.*
+
+# --- Capturas e logs locais ---
+*.log
+capturas/
+
+# --- Python (tools/) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- macOS ---
+.DS_Store
+._*
+
+# --- Editores ---
+*.swp
+*~
+.idea/

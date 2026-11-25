@@ -1,0 +1,7 @@
+{
+  "folders": [
+    { "name": "remote_control", "path": "." },
+    { "name": "rf_rx", "path": "firmware/rf_rx" },
+    { "name": "rf_tx", "path": "firmware/rf_tx" }
+  ]
+}

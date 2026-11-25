@@ -1,0 +1,20 @@
+# Entidades expostas para a Alexa via Emulated Hue (descoberta local, sem nuvem).
+# Requisitos: HA na mesma rede do Echo e porta 80 livre no host.
+# Depois de mudar: reiniciar o HA e pedir "Alexa, descubra dispositivos".
+
+emulated_hue:
+  listen_port: 80
+  expose_by_default: false
+  entities:
+    media_player.tv_quarto:
+      name: "TV do quarto"
+      hidden: false
+    media_player.tv_sala:
+      name: "TV da sala"
+      hidden: false
+    light.luz_escritorio:          # do pacote ventilador_escritorio.yaml
+      name: "Luz do escritório"
+      hidden: false
+    fan.ventilador_escritorio:     # do pacote ventilador_escritorio.yaml
+      name: "Ventilador do escritório"
+      hidden: false
